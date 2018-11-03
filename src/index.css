@@ -8,7 +8,88 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+
+#display{
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 1px #CDF7F6
+}
+
+body{
+  background-image: url('http://www.technocrazed.com/wp-content/uploads/2015/11/Cool-Black-And-White-Wallpapers-Resolution-1920x1080-Desktop-Backgrounds-120.jpg');
+	background-color: black;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+footer{
+	color: white;
+	text-align: center;
+	margin-top: 8%;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.pad{
+  width: 200px;
+  background-color: white;
+	margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 0px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 15px 4px white,inset 0 0 25px 2px rgba(0,0,0,0.5);
+}
+.padContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 2;
+  width: 850px;
+  grid-gap: 10px;
+  margin: 40px auto;
+}
+.title{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+	margin: 120px;
+	text-shadow: 1px 1px 1px #CDF7F6;
+  font-family: 'Spicy Rice', cursive;
+}
+
+
+@media screen and (max-width: 1140px){
+	footer{
+		margin-top: 0px;
+	}
+	.title{
+		margin: 70px;
+	}
+}
+@media screen and (max-width: 900px){
+	.title{
+		font-size: 30px;
+		margin: 0px;
+	}
+	footer{
+		font-size: 12px;
+	}
+	.padContainer{
+		grid-template-columns: auto;
+  	grid-template-rows: 4;
+		width: 90%;
+		margin: 40px auto;
+	}
+	.pad{
+		width: 100%;
+	}
 }
